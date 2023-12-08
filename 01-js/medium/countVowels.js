@@ -6,7 +6,14 @@
 */
 
 function countVowels(str) {
-    // Your code here
+  str = str.toLowerCase(); // you have to update the string str.toLowerCase(); forms a new string doesn't auto update the og string
+  let count = 0;
+  for(let i=0; i<str.length; i++){
+    if(str.charAt(i)=='u' || str.charAt(i)=='o' || str.charAt(i)=='i' || str.charAt(i)=='e' || str.charAt(i)=='a') {
+      count++;
+    }
+  }
+  return count;
 }
 
 module.exports = countVowels;
